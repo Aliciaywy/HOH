@@ -51,7 +51,6 @@ For email functionality, you need to create a Gmail App Password:
    - Heroku: Use `heroku config:set`
    - Vercel: Set in dashboard or `vercel.json`
    - AWS: Use environment variables in your service
-   - Railway: Set in project settings
 
 3. **Generate a strong session secret**:
    ```javascript
@@ -67,9 +66,6 @@ heroku config:set EMAIL_USER=your-email@gmail.com
 heroku config:set EMAIL_PASS=your-app-password
 heroku config:set SESSION_SECRET=your-session-secret
 ```
-
-**Railway:**
-Set variables in the dashboard under "Variables" tab
 
 **Vercel:**
 Set variables in project settings or use `vercel.json`

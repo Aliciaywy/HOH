@@ -75,9 +75,9 @@ app.get('/', (req, res) => {
   db.query('SELECT * FROM product_catalog', (err, products) => {
     if (err) {
       console.error('DB error:', err);
-      return res.render('homepage', { products: [] });
+      return res.render('index', { products: [] });
     }
-    res.render('homepage', { products });
+    res.render('index', { products });
   });
 });
 app.get('/terms', (req, res) => res.render('terms'));
